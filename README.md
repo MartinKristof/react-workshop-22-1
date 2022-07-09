@@ -44,3 +44,27 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+# VS Code my extensions
+
+To install extensions for VS code as I use, please copy a content from extensions-vs.txt to your command line and execute.
+It will take some time.
+
+## Sources
+
+* [How works this in JS](https://medium.com/@daveivan/jak-funguje-this-v-javascriptu-41e02ed6dd57)
+* [Prototypes in JS](https://javascript.info/native-prototypes)
+* [var, let vs const in JS](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)
+* [React docs](https://reactjs.org/docs/getting-started.html)
+* [React keys](https://www.freecodecamp.org/news/react-fun-with-keys-68f4c8c36f3e/)
+* [React router](https://reactrouter.com/web/guides/quick-start)
+* [React devtools extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+* [Reactstrap](https://reactstrap.github.io/components/breadcrumbs/)
+* [Ant design](https://ant.design/docs/react/getting-started)
+* [Styled components](https://styled-components.com/docs/basics#getting-started)
+* [Next auth library](https://next-auth.js.org/getting-started/introduction)
+* [Create react app boilerplate](https://create-react-app.dev/)
+* [Next.js](https://nextjs.org/)
+* [Progress bar in Next.js](https://www.ravsam.in/blog/progress-bar-in-next-js/)
+* [AMP](https://www.vzhurudolu.cz/prirucka/amp)

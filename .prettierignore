@@ -1,0 +1,18 @@
+# Ignore artifacts:
+coverage
+node_modules
+package-lock.json
+yarn.json
+*.yml
+*.yaml
+*.md
+*.scss
+.vscode
+.next
+public
+reports
+results
+*.sublime-*
+terraform
+
+build

@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# React workshop 1
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Includes examples for ECMAScript features and basics of React.js.
+
+## Prerequisites
+
+* Node version 17 or higher
+* Yarn ([installation] (https://classic.yarnpkg.com/lang/en/docs/install/))
+* VSCode (recommended)
+* Terminal
 
 ## Available Scripts
 
@@ -39,14 +48,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## VS Code - my extensions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-
-# VS Code my extensions
 
 To install extensions for VS code as I use, please copy a content from extensions-vs.txt to your command line and execute.
 It will take some time.
@@ -63,8 +66,5 @@ It will take some time.
 * [Reactstrap](https://reactstrap.github.io/components/breadcrumbs/)
 * [Ant design](https://ant.design/docs/react/getting-started)
 * [Styled components](https://styled-components.com/docs/basics#getting-started)
-* [Next auth library](https://next-auth.js.org/getting-started/introduction)
 * [Create react app boilerplate](https://create-react-app.dev/)
 * [Next.js](https://nextjs.org/)
-* [Progress bar in Next.js](https://www.ravsam.in/blog/progress-bar-in-next-js/)
-* [AMP](https://www.vzhurudolu.cz/prirucka/amp)

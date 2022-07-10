@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
-import { Components } from './components/Components';
+// import { Components } from './components/Components';
 
 const App = () => (
   <div className="App">
-    <header className="App-header">{/* <Components /> */}</header>
+    <header className="App-header">
+      <section>
+        <h1>React workshop 1</h1>
+        {/* <Components /> */}
+      </section>
+    </header>
   </div>
 );
 

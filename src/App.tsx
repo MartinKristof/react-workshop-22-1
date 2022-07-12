@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-// import { Components } from './components/Components';
+// import { Components } from './examples/components/Components';
 
 const App = () => (
   <div className="App">

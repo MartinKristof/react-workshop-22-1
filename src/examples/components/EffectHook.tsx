@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Turn on Strict Mode
-const LifecycleDemo = ({ random, mounted }: { random: number; mounted: boolean }) => {
+const LifecycleDemo: React.FC<{ random: number; mounted: boolean }> = ({ random, mounted }) => {
   React.useEffect(() => {
     console.log('use effect - aka componentDidMount + componentDidUpdate!'); // Every render (componentDidMount + componentDidUpdate)
   });

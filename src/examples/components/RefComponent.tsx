@@ -1,6 +1,6 @@
 import React, { ReactNode, RefObject } from 'react';
 
-const Button = ({ children, onClick }: { children: ReactNode; onClick: () => void }) => (
+const Button: React.FC<{ children: ReactNode; onClick: () => void }> = ({ children, onClick }) => (
   <button type="button" className="btn" onClick={onClick}>
     {children}
   </button>

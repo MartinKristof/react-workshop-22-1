@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TodoList = ({ todos, onClick }: { todos: string[]; onClick: (index: number) => void }) => (
+const TodoList: React.FC<{ todos: string[]; onClick: (index: number) => void }> = ({ todos, onClick }) => (
   <ul>
     {todos.map((todo, index) => (
       <li key={index}>
@@ -13,7 +13,7 @@ const TodoList = ({ todos, onClick }: { todos: string[]; onClick: (index: number
   </ul>
 );
 
-const Control = ({ onClick }: { onClick: (value: string) => void }) => {
+const Control: React.FC<{ onClick: (value: string) => void }> = ({ onClick }) => {
   const [value, setValue] = React.useState<string>('');
 
   const handleOnChange = (event: React.FormEvent<HTMLInputElement>) => {
@@ -39,7 +39,7 @@ const Control = ({ onClick }: { onClick: (value: string) => void }) => {
   );
 };
 
-const LiftStateUp = ({ title }: { title: string }) => {
+const LiftStateUp: React.FC<{ title: string }> = ({ title }) => {
   const [todos, setTodos] = React.useState<string[]>([]);
 
   const addTodo = (todo: string) => {

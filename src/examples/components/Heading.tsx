@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
-const Heading = ({ title, children }: { title: string; children: ReactNode }) => (
+const Heading: React.FC<{ title: string; children: ReactNode }> = ({ title, children }) => (
   <div>
     <h1>{title}</h1>
     {children}

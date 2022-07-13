@@ -10,6 +10,7 @@ import List from './List';
 import { CounterWithDispatcher } from './ReducerHook';
 import RefComponent from './RefComponent';
 import { Counter } from './StateHook';
+import ReactQuery from './toRefactor/ReactQuery';
 import UncontrolledForm from './UncontrolledForm';
 
 export const Components = () => (
@@ -29,5 +30,6 @@ export const Components = () => (
     <Effects />
     <CounterWithDispatcher />
     <LiftStateUp title="Title" />
+    <ReactQuery />
   </section>
 );

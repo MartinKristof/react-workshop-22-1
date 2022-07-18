@@ -15,21 +15,21 @@ import UncontrolledForm from './UncontrolledForm';
 
 export const Components = () => (
   <section>
-    <Heading title="Title">
+    {/* <Heading>
       <p>Playground</p>
-    </Heading>
-    <Click />
+    </Heading> */}
+    {/* <Click /> */}
     <Input />
-    <LifeCycles />
-    <RefComponent />
-    <UncontrolledForm />
-    <List numbers={[1, 3, 5]} type="a" />
-    <List numbers={[1, 3, 5]} type="b" />
-    <ContextApply />
-    <Counter />
-    <Effects />
-    <CounterWithDispatcher />
-    <LiftStateUp title="Title" />
-    <ReactQuery />
+    {/* <LifeCycles /> */}
+    {/* <RefComponent /> */}
+    {/* <UncontrolledForm /> */}
+    {/* <List numbers={[1, 3, 5]} type="a" /> */}
+    {/* <List numbers={[1, 3, 5]} type="b" /> */}
+    {/* <ContextApply /> */}
+    {/* <Counter /> */}
+    {/* <Effects /> */}
+    {/* <CounterWithDispatcher /> */}
+    {/* <LiftStateUp title="Title" /> */}
+    {/* <ReactQuery /> */}
   </section>
 );

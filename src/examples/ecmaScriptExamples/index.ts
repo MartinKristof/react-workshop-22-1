@@ -2,7 +2,7 @@
 // import './classes';
 // import './promise';
 // import './object';
-import './operators';
+// import './operators';
 console.log('Examples ECMAScript');
 
 export {};

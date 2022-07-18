@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-const Heading: React.FC<{ title: string; children: ReactNode }> = ({ title, children }) => (
+const Heading: React.FC<{ title?: string; children: ReactNode }> = ({ title = 'foo', children }) => (
   <div>
     <h1>{title}</h1>
     {children}
@@ -12,10 +12,12 @@ const Heading: React.FC<{ title: string; children: ReactNode }> = ({ title, chil
 //   children: ReactNode;
 // }> {
 //   render() {
+//     const { title, children } = this.props;
+
 //     return (
 //       <div>
-//         <h1>{this.props.title}</h1>
-//         {this.props.children}
+//         <h1>{title}</h1>
+//         {children}
 //       </div>
 //     );
 //   }

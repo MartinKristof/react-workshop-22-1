@@ -17,15 +17,14 @@ class UserTS {
     this.name = name;
   }
 
-  getName(): string {
+  getName = () => {
     return this.name;
-  }
+  };
 }
 
 // const peter = new User('Peter');
 const peterTs = new UserTS('Peter');
 
 // console.log(peter.name);
-console.log(peterTs.getName());
 
 export {};

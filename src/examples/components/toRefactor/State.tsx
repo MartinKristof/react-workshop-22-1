@@ -8,7 +8,7 @@ const State = () => {
       <h1 style={{ color: color }}>React Hooks</h1>
       <button
         onClick={() => {
-          setColor('red');
+          setColor(() => 'red');
         }}
       >
         change color to red

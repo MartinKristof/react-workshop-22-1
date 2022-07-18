@@ -1,8 +1,13 @@
 /* eslint-disable max-classes-per-file */
 import { Component, PureComponent } from 'react';
 
-class LifeCycles extends Component<unknown, { toggled: boolean }> {
-  constructor(props: unknown) {
+type Props = unknown;
+
+interface State {
+  toggled: boolean;
+}
+class LifeCycles extends PureComponent<Props, State> {
+  constructor(props: Props) {
     super(props);
 
     console.log('constructor');
@@ -16,11 +21,11 @@ class LifeCycles extends Component<unknown, { toggled: boolean }> {
     console.log('did mount');
   }
 
-  // shouldComponentUpdate(props, state) {
-  //     console.log(props, state);
-  //     console.log('should');
+  // shouldComponentUpdate(props: Props, state: State) {
+  //   console.log(props, state);
+  //   console.log('should');
 
-  //     return state.toggled !== this.state.toggled;
+  //   return state.toggled !== this.state.toggled;
   // }
 
   // shouldComponentUpdate() {

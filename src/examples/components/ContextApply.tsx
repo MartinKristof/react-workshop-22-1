@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import LocaleContext from '../contexts/LocaleContext';
 
 const LocaleTogglerButton = () => (
@@ -13,13 +13,13 @@ const LocaleTogglerButton = () => (
   </div>
 );
 
-const Text = () => <LocaleContext.Consumer>{({ locale }) => <h2>{locale}</h2>}</LocaleContext.Consumer>;
+// const Text = () => <LocaleContext.Consumer>{({ locale }) => <h2>{locale}</h2>}</LocaleContext.Consumer>;
 
-// const Text = () => {
-//   const { locale } = useContext(LocaleContext);
+const Text = () => {
+  const { locale } = useContext(LocaleContext);
 
-//   return <h2>{locale}</h2>;
-// };
+  return <h2>{locale}</h2>;
+};
 
 class ContextApply extends React.PureComponent<unknown, { locale: string; toggleLocale: () => void }> {
   constructor(props: unknown) {

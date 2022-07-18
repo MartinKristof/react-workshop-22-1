@@ -3,7 +3,7 @@ import React from 'react';
 const TodoList: React.FC<{ todos: string[]; onClick: (index: number) => void }> = ({ todos, onClick }) => (
   <ul>
     {todos.map((todo, index) => (
-      <li key={index}>
+      <li key={`list-${index}`}>
         {todo}
         <button type="button" onClick={() => onClick(index)}>
           x
@@ -21,7 +21,7 @@ const Control: React.FC<{ onClick: (value: string) => void }> = ({ onClick }) =>
   };
 
   const clear = () => {
-    setValue('');
+    setValue(() => '');
   };
 
   const handleOnClick = () => {
@@ -43,7 +43,7 @@ const LiftStateUp: React.FC<{ title: string }> = ({ title }) => {
   const [todos, setTodos] = React.useState<string[]>([]);
 
   const addTodo = (todo: string) => {
-    setTodos(todos => todos.concat(todo));
+    setTodos(todos => [...todos, todo]);
   };
 
   const deleteTodo = (index: number) => {

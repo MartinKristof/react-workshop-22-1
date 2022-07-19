@@ -27,6 +27,8 @@ export const Posts = () => {
     };
 
     setPostItems(oldItems => [...oldItems, newPost]);
+
+    event.currentTarget.reset();
   };
 
   return (

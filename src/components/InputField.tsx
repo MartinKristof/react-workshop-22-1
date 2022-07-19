@@ -8,14 +8,12 @@ interface Props {
   label: string;
   placeholder?: string;
   type?: TInputFileType;
-  inputRef: RefObject<HTMLInputElement>;
+  inputRef?: RefObject<HTMLInputElement>;
 }
 
-export const InputField: React.FC<Props> = ({ inputRef, id, label, placeholder, type = 'email' }) => {
-  return (
-    <FormGroup>
-      <Label for={id}>{label}</Label>
-      <Input innerRef={inputRef} id={id} name={id} placeholder={placeholder} type={type} />
-    </FormGroup>
-  );
-};
+export const InputField: React.FC<Props> = ({ inputRef, id, label, placeholder, type = 'email' }) => (
+  <FormGroup>
+    <Label for={id}>{label}</Label>
+    <Input innerRef={inputRef} id={id} name={id} placeholder={placeholder} type={type} />
+  </FormGroup>
+);

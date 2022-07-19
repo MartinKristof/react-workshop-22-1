@@ -15,15 +15,10 @@ interface Props {
   onSubmit: (event: React.FormEvent<PostFormElements>) => void;
 }
 
-export const Form: React.FC<Props> = ({ onSubmit }) => {
-  const nickRef = useRef<HTMLInputElement>(null);
-  const contentRef = useRef<HTMLInputElement>(null);
-
-  return (
-    <ReactStrapForm onSubmit={onSubmit}>
-      <InputField inputRef={nickRef} id="nick" label="Nickname" />
-      <InputField inputRef={contentRef} id="content" label="Content" type="textarea" />
-      <Button size="lg">Ok</Button>
-    </ReactStrapForm>
-  );
-};
+export const Form: React.FC<Props> = ({ onSubmit }) => (
+  <ReactStrapForm onSubmit={onSubmit}>
+    <InputField id="nick" label="Nickname" />
+    <InputField id="content" label="Content" type="textarea" />
+    <Button size="lg">Ok</Button>
+  </ReactStrapForm>
+);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardBody, CardSubtitle, CardText, CardTitle } from 'reactstrap';
-import { TPost } from '../common/types/post';
+import { TPost } from '../../common/types/post';
 
 interface PostProps {
   createdAt: TPost['createdAt'];

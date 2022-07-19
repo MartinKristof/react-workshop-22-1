@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { List } from 'reactstrap';
-import { TPost } from '../common/types/post';
+import { TPost } from '../../common/types/post';
 import { Post } from './Post';
 
 interface Props {

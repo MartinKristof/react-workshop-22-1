@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Button, Form as ReactStrapForm } from 'reactstrap';
-import { InputField } from './InputField';
+import { InputField } from '../ui/InputField';
 
 interface MyFormElements extends HTMLFormControlsCollection {
   nick: HTMLInputElement;

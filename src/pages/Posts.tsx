@@ -5,16 +5,18 @@ import { Form, PostFormElements } from '../components/posts/Form';
 import { PostList } from '../components/posts/PostList';
 import { useState } from 'react';
 import { Layout } from '../components/Layout';
+import { useUserContext } from '../hooks/useUserContext';
 
 export const Posts = () => {
   const [postItems, setPostItems] = useState<TPost[]>([]);
+  const { nick } = useUserContext();
 
   const handleSubmit = (event: React.FormEvent<PostFormElements>) => {
     event.preventDefault();
 
     const newPost: TPost = {
       createdAt: Date.now(),
-      nickName: event.currentTarget.elements.nick.value,
+      nickName: nick || event.currentTarget.elements.nick.value,
       content: event.currentTarget.elements.content.value,
     };
 

@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Button, Form as ReactStrapForm } from 'reactstrap';
-import { UserContext } from '../../contexts/UserContext';
+import { useUserContext } from '../../hooks/useUserContext';
 import { InputField } from '../ui/InputField';
 
 interface MyFormElements extends HTMLFormControlsCollection {
@@ -17,12 +17,12 @@ interface Props {
 }
 
 export const Form: React.FC<Props> = ({ onSubmit }) => {
-  const { nick } = useContext(UserContext);
+  const { nick } = useUserContext();
 
   return (
     <ReactStrapForm onSubmit={onSubmit}>
-      {nick ? <h2>Post by: {nick} </h2> : <InputField id="nick" label="Nickname" />}
-      <InputField id="content" label="Content" type="textarea" />
+      {nick ? <h2>Post by: {nick} </h2> : <InputField id="nick" label="Nickname" required />}
+      <InputField id="content" label="Content" type="textarea" required />
       <Button size="lg">Ok</Button>
     </ReactStrapForm>
   );

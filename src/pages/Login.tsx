@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button, Form } from 'reactstrap';
 import { Layout } from '../components/Layout';
 import { InputField } from '../components/ui/InputField';
-import { TUserContext, UserContext } from '../contexts/UserContext';
+import { useUserContext } from '../hooks/useUserContext';
 
 interface MyFormElements extends HTMLFormControlsCollection {
   nick: HTMLInputElement;
@@ -14,7 +14,7 @@ export interface LoginFormElements extends HTMLFormElement {
   readonly elements: MyFormElements;
 }
 export const Login = () => {
-  const { setNick } = useContext<TUserContext>(UserContext);
+  const { setNick } = useUserContext();
   const navigate = useNavigate();
 
   const handleSubmit = (event: React.FormEvent<LoginFormElements>) => {
@@ -29,8 +29,8 @@ export const Login = () => {
   return (
     <Layout>
       <Form onSubmit={handleSubmit}>
-        <InputField id="nick" label="Nickname" placeholder="pepa@novak.com" />
-        <InputField id="pass" label="Password" type="password" />
+        <InputField id="nick" label="Nickname" placeholder="pepa@novak.com" required />
+        <InputField id="pass" label="Password" type="password" required />
         <Button>Log in</Button>
       </Form>
     </Layout>

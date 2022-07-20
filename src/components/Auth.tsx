@@ -5,7 +5,7 @@ import { useUserContext } from '../hooks/useUserContext';
 
 export const Auth: React.FC<{ children: JSX.Element }> = ({ children }) => {
   const { getUser } = useAuth();
-  const { nick, setNick } = useUserContext();
+  const { setNick } = useUserContext();
   const location = useLocation();
   const user = getUser();
 

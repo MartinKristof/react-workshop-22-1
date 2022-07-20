@@ -4,10 +4,9 @@ import { TPost } from '../common/types/post';
 import { Form, PostFormElements } from '../components/posts/Form';
 import { PostList } from '../components/posts/PostList';
 import { useState } from 'react';
-import { Layout } from '../components/Layout';
 import { useUserContext } from '../hooks/useUserContext';
 
-export const Posts = () => {
+export const Posts: React.FC = () => {
   const [postItems, setPostItems] = useState<TPost[]>([]);
   const { nick } = useUserContext();
 
@@ -26,7 +25,7 @@ export const Posts = () => {
   };
 
   return (
-    <Layout>
+    <>
       <Row>
         <Col>
           <Form onSubmit={handleSubmit} />
@@ -37,6 +36,6 @@ export const Posts = () => {
           <PostList items={postItems} />
         </Col>
       </Row>
-    </Layout>
+    </>
   );
 };
